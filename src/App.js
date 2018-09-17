@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 import './App.css';
 
 import Home from './components/home';
-import BC from './components/blockchain';
+import G1 from './components/projectG1';
+import G2 from './components/projectG2';
 import PUB from './components/publication';
 import Fame from './components/fame';
 import Resume from './components/resume';
@@ -20,7 +21,8 @@ class App extends Component {
           <Route exact path = "/publication" component = {PUB}/>
           <Route exact path = "/fame" component = {Fame}/>
           <Route exact path = "/resume" component = {Resume}/>
-          <Route exact path = "/blockchain" component = {BC}/>
+          <Route exact path = "/projectG1" component = {G1}/>
+          <Route exact path = "/projectG2" component = {G2}/>
           </div>
         </Router>
       </div>

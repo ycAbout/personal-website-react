@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Nav from './nav';
-import { educations, Experience } from './experienceEdu';
-import {summaryList, skillsList, achievementsList} from './data';
+import { educations, Experiences } from './experienceEdu';
+import {summaryList, skillsList, achievementsList, person} from '../data/data';
 
 const summary = summaryList.map((summary) =>
   <li>{summary}</li>
@@ -19,15 +19,15 @@ class Resume extends Component {
         <div>
           <Nav/>
           <br/>
-          <h4>Corey (Yalin) Chen</h4>
-          <p>Saskatoon, Saskatchewan, Canada | Email: corey.about@gmail.com</p>
+          <h4>{person.name}</h4>
+          <p>{person.city} | Email: {person.email}</p>
           <div className="container text-left">
             <h5>Summary</h5>
             <hr/>
             <ul >{summary}</ul>
             <h5>Experience</h5>
             <hr/>
-            <Experience/>
+            <Experiences/>
             <h5>Education</h5>
             <hr/>
             <ul>{educations}</ul>

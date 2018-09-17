@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Nav from './nav';
-import {awardList, grantList} from './data';
+import {awardList, grantList} from '../data/data';
 
 const awards = awardList.map((award) =>
   <li>{award}</li>

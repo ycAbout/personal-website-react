@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Nav from './nav';
-import { paperList, bookList, conferenceList } from './data';
+import { paperList, bookList, conferenceList } from '../data/data';
 
 const papers = paperList.map((paper) =>
   <li>{paper}</li>

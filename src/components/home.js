@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Nav from './nav';
 import './home.css';
-import Author from '../author.gif';
+import Me from '../data/me.gif';
+import { person } from '../data/data';
 
 class Home extends Component {
     render() {
@@ -13,22 +14,22 @@ class Home extends Component {
             <div className="row">
               <div className="col-sm-4">
                 <div className="card">
-                  <img className="center" src={Author} alt=""/>
+                  <img className="center" src={Me} alt=""/>
                   <div className="card-body">
-                    <h5 className="card-title">Corey (Yalin) Chen</h5>
+                    <h5 className="card-title">{person.name}</h5>
                     <hr/>
-                    <h5 className="card-title">Software and blockchain developer</h5>
-                    <p className="card-text">Skill stack: Reactjs + Nodejs / Python + Mongodb / MySQL / Hyperledger Composer</p>
-                    <a href="https://www.linkedin.com/in/coreyabout/" className="card-link">Linkedin</a>
-                    <a href="https://github.com/CoreyAbout" className="card-link">Github</a>
+                    <h5 className="card-title">{person.title1}</h5>
+                    <p className="card-text">Skill stack: {person.selectedSkills1}</p>
+                    <a href={person.linkedin} className="card-link">Linkedin</a>
+                    <a href={person.github} className="card-link">Github</a>
                     <br/>
                     <br/>
-                    <h5 >Cogntive Psychology research expert</h5>
-                    <p className="card-text">Skills: Human research & data analysis</p>
-                    <a href="https://www.researchgate.net/profile/Yalin_Chen3" className="card-link">Research Gate</a>
+                    <h5 >{person.title2}</h5>
+                    <p className="card-text">Skills stack: {person.selectedSkills2}</p>
+                    <a href={person.researchGate} className="card-link">Research Gate</a>
                     <br/>
                     <br/>
-                    <p className="card-text">Email: corey.about@gmail.com</p>
+                    <p className="card-text">Email: {person.email}</p>
                   </div>
                 </div>
               </div>

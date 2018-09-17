@@ -16,10 +16,19 @@
 .env.test.local
 .env.production.local
 
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# for firebase deploy
 .firebaserc
 firebase.json
 /.firebase
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# for personal data
+03.jpg
+bg.jpg
+bg.original.jpg
+data.me.js
+me.gif
+WaterInk.jpg
