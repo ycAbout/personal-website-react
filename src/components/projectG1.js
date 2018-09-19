@@ -9,7 +9,7 @@ function Project (props) {
 );
   return (
     <div className="col-sm-4">
-      <div className="card">
+      <div className="card bg-light">
         <div className="card-body">
           <h5 className="card-title">{projects.group1["project"+j].title}</h5>
           <hr/>
