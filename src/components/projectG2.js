@@ -16,7 +16,7 @@ function Project (props) {
           <p className="card-text">Tech stack: {projects.group2["project"+j].tech}</p>
           <h5>Features</h5>
           <p className="card-p">{features}</p>
-          <a href={projects.group2["project"+j].link} className="card-link">Online repository</a>
+          <a href={projects.group2["project"+j].link} className="card-link">Link</a>
           <br/>
         </div>
       </div>
