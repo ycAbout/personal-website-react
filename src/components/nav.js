@@ -23,6 +23,7 @@ class Nav extends Component {
                   <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                     <Link className="dropdown-item" to="./projectG1">{projects.group1.name}</Link>
                     <Link className="dropdown-item" to="./projectG2">{projects.group2.name}</Link>
+                    <Link className="dropdown-item" to="./projectG3">{projects.group3.name}</Link>
                   </div>
                 </li>
                 <li className="nav-item">

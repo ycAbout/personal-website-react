@@ -104,6 +104,19 @@ const projects = {
       link: 'online repository'
     },
   },
+  group2: {
+    name:'name for this group',
+    project1: {
+      title: "title for the project",
+      tech: 'technology used for this project',
+      feature:[
+          'feature 1',
+          'feature 2', 
+          'feature 3'
+      ],
+      link: 'online repository'
+    },
+  },
 }
 
 

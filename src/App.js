@@ -5,6 +5,7 @@ import './App.css';
 import Home from './components/home';
 import G1 from './components/projectG1';
 import G2 from './components/projectG2';
+import G3 from './components/projectG3';
 import PUB from './components/publication';
 import Fame from './components/fame';
 import Resume from './components/resume';
@@ -23,6 +24,7 @@ class App extends Component {
           <Route exact path = "/resume" component = {Resume}/>
           <Route exact path = "/projectG1" component = {G1}/>
           <Route exact path = "/projectG2" component = {G2}/>
+          <Route exact path = "/projectG3" component = {G3}/>
           </div>
         </Router>
       </div>
