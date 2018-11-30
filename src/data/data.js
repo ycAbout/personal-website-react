@@ -3,8 +3,8 @@ const person = {
   city: 'Saskatoon, SK, Canada',
   email: 'corey.about@gmail.com',
   title1: 'Web and blockchain developer',
-  selectedSkills1: 'Reactjs + Nodejs / Python + Mongodb / MySQL / Hyperledger Composer',
-  title2: 'User Experience | Cogntive Psychology research expert',
+  selectedSkills1: 'Reactjs + Nodejs | Python + Mongodb | MySQL | Hyperledger Composer',
+  title2: 'User Experience | Cogntive psychology research expert',
   selectedSkills2: 'Human research + Data analysis',
   linkedin: 'https://www.linkedin.com/in/coreyabout/',
   github: 'https://github.com/CoreyAbout',
@@ -121,12 +121,11 @@ const projects = {
   group1: {
     name:'Blockchain',
     project1: {
-      title: "Blockchain for psychology test",
-      tech: 'Hyperledger Composer + Nodejs + Reactjs + Mongodb',
+      title: "Psychology test Blockchain (private)",
+      tech: 'Reactjs + Nodejs + Hyperledger Composer + MongoDB',
       feature:[
-          'Helps to establish the single source of truth for psychology test data.',
-          'The essential information and access controls are saved on blockchain, making them immutable and available on every node.', 
-          'You control your own data. (The link for now is private)'
+          'Helps to establish the single source of truth with that you control your own data.',
+          'The essential information and access controls are immutable and available on every node.',
       ],
       link: 'https://github.com/coreyabout/psytest'
     },
@@ -177,6 +176,11 @@ const projects = {
   },
 }
 
+const courses = {
+    frontEnd: ["ReactJS (Microsoft)", "React Router & Redux (Microsoft)", "HTML5 (W3Cx)"],
+    HCI: ["Human Computer Interaction (Stanford)"]
+}
+
 export {
     person,
     eduList, 
@@ -189,5 +193,6 @@ export {
     summaryList,
     achievementsList,
     skillsList,
-    projects
+    projects,
+    courses
 };

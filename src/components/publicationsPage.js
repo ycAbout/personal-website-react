@@ -3,18 +3,18 @@ import Nav from './nav';
 import { paperList, bookList, conferenceList } from '../data/data';
 
 const papers = paperList.map((paper) =>
-  <li>{paper}</li>
+  <li key={paper.slice(50,60)}>{paper}</li>
 );
 
 const books = bookList.map((book) =>
-  <li>{book}</li>
+  <li key={book.slice(50,60)}>{book}</li>
 );
 
 const conferences = conferenceList.map((conference) =>
-  <li>{conference}</li>
+  <li key={conference.slice(50,60)}>{conference}</li>
 );
 
-class Publication extends Component {
+class PublicationsPage extends Component {
     render() {
       return (
         <div>
@@ -33,4 +33,4 @@ class Publication extends Component {
     }
   }
   
-  export default Publication;
+  export default PublicationsPage;

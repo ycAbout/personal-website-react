@@ -6,9 +6,26 @@
     width: 100vw
 }
 
+#content {
+    position:relative;
+}
+
 .center {
     position:center center;
     margin: auto; 
 }
+
+main {
+    position: absolute;;
+    width: 70%; 
+}
+
+aside {
+    position: absolute;
+    width: 28%; 
+    right: 0;
+}
+
+
 
 
