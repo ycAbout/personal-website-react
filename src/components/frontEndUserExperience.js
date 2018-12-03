@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import figure1 from '../data/03.jpg';
-import { projects, courses } from '../data/data';
+import figure1 from '../data/stevejobsquote.jpg';
+import { projects, courses, eduList } from '../data/data';
 
 function Project(props) {
   let i = props.group;
@@ -12,14 +12,14 @@ function Project(props) {
   );
   return (
     <div className="text-left">
-      <div className="">
-        <a href={projects["group" + i]["project" + j].link} className="">
-          <h6 className="">{projects["group" + i]["project" + j].title}</h6>
+      <div>
+        <a href={projects["group" + i]["project" + j].link} target="_blank" rel="noopener noreferrer">
+          <h6>{projects["group" + i]["project" + j].title}</h6>
         </a>
         <hr />
-        <p className="small">{projects["group" + i]["project" + j].tech}</p>
+        <p>{projects["group" + i]["project" + j].tech}</p>
         <h6>Features</h6>
-        <p className="small">{features}</p>
+        <p>{features}</p>
       </div>
     </div>
   );
@@ -34,7 +34,7 @@ function Figure(props) {
     padding: "20px",
   }
   return (
-    <div className="">
+    <div>
       <img src={figure1} style={style} alt="figure for front end and user experience"></img>
     </div>
   );
@@ -48,8 +48,22 @@ function Course(props) {
   );
   return (
     <div className="text-left">
-        <h6 className="">{name}</h6>
-        <ul className="small">{courseList}</ul>
+        <h6>{name} courses</h6>
+        <ul>{courseList}</ul>
+    </div>
+  );
+}
+
+function Degree(props) {
+  let tag = props.tag;
+  const degreeList = eduList.map((degree) =>
+    <li key={tag.toString()+degree.slice(0,6)}>{degree}</li>
+  );
+  return (
+    <div className="text-left">
+        <h6>Degrees</h6>
+        <hr/>
+        <ul className="small">{degreeList}</ul>
     </div>
   );
 }
@@ -58,8 +72,8 @@ function Course(props) {
 function FrontEndUserExperience(props) {
   return (
     <div>
-      <Link to="./frontEndUserExperience">
-        <h6 className="text-left text-secondary">FRONT END AND USER EXPERIENCE</h6>
+      <Link to="./frontEndUserExperiencePage">
+        <h6 className="text-left text-secondary">FRONT END AND USER EXPERIENCE >></h6>
       </Link>
       <div className="row align-items-center">
         <div className="col-sm-4">
@@ -70,12 +84,13 @@ function FrontEndUserExperience(props) {
           <Figure />
         </div>
       </div>
+      <br/>
       <div className="row align-items-center">
         <div className="col-sm-6">
-          <Project group={3} index={1} tag={1} />
+          <Degree tag={1} />
         </div>
         <div className="col-sm-6">
-          <Project group={3} index={1} tag={2} />
+          <Project group={3} index={1} tag={1} />
         </div>
       </div>
     </div>

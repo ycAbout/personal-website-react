@@ -45,7 +45,7 @@ const experiences = {
 
 const eduList = [
     'Master in Computer Science 2017- | University of Saskatchewan (Saskatoon, Canada)',
-    'Ph.D. in Cognitive Neuroscience 2013 | Joint program of the University of Saskatchewan (Saskatoon, Canada, 2012-2013) and Nanjing Normal University (Nanjing, China) Note. acquired the master\'s degree in 2010',
+    'Ph.D. in Cognitive psychology 2013 | Joint program of the University of Saskatchewan (Saskatoon, Canada, 2012-2013) and Nanjing Normal University (Nanjing, China)',
     'Bechalor in Human Resource Management (Psychology stream) 2007 | Department of Psychology, Henan University, Kaifeng, China. ',
 ]
 
@@ -121,7 +121,7 @@ const projects = {
   group1: {
     name:'Blockchain',
     project1: {
-      title: "Psychology test Blockchain (private)",
+      title: "Psychology test Blockchain (link private)",
       tech: 'Reactjs + Nodejs + Hyperledger Composer + MongoDB',
       feature:[
           'Helps to establish the single source of truth with that you control your own data.',
@@ -181,6 +181,56 @@ const courses = {
     HCI: ["Human Computer Interaction (Stanford)"]
 }
 
+const cognitiveArithmetic = {
+    concept: "The area of cognitive arithmetic is concerned with the mental representation of number and arithmetic, and the processes and procedures that access and use this knowledge. --Ashcraft(1992)",
+    effects: [
+        "Problem size effect", 
+        "Retrieval induced forgetting", 
+        "Size congruency effect", 
+        "Transfer of training", 
+        "Cultural differences",
+        "Odd-even effect",
+        "Distance effect"
+    ]
+}
+
+const recentPublication = {
+    title: "Does the min-counting strategy for simple addition become automatized in educated adults? A behavioural and ERP study of the size congruency effect.",
+    highlights: [
+        "The min strategy should become automatized if assume automatic counting for addition.",
+        "The min strategy inherently requires number comparison.",
+        "Number comparison produces the size congruency effect (SCE).",
+        "The present study found a robust SCE for number comparison but not for addition.",
+        "No SCE ruled out the possibility of a min-counting strategy for adults’ addition."
+    ],
+    link: "https://www.sciencedirect.com/science/article/pii/S0028393218303853?via%3Dihub"
+}
+
+const uxHeuristics = {
+    title: "10 Usability Heuristics for User Interface Design",
+    heuristics: [
+        "Visibility of system status",
+        "Match between system and the real world",
+        "User control and freedom",
+        "Consistency and standards",
+        "Error prevention",
+        "Recognition rather than recall",
+        "Flexibility and efficiency of use",
+        "Aesthetic and minimalist design",
+        "Help users recognize, diagnose, and recover from errors",
+        "help and documentation"
+        ],
+    link: "https://www.nngroup.com/articles/ten-usability-heuristics/"
+}
+
+const gaming = {
+    title: "The Psychology of Esports: A Systematic Literature Review",
+    contents: [
+        '"The aim of the present paper was to review the main topics of psychological interest about esports and then to examine the similarities of esports to professional and problem gambling. As a result of a systematic literature search, eight studies were identified that had investigated three topics: (1) the process of becoming an esport player, (2) the characteristics of esport players such as mental skills and motivations, and (3) the motivations of esport spectators."'
+    ],
+    link: "https://link.springer.com/article/10.1007%2Fs10899-018-9763-1"
+}
+
 export {
     person,
     eduList, 
@@ -194,5 +244,9 @@ export {
     achievementsList,
     skillsList,
     projects,
-    courses
+    courses,
+    cognitiveArithmetic,
+    recentPublication,
+    uxHeuristics,
+    gaming
 };

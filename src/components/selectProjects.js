@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import figure1 from '../data/03.jpg';
+import figure1 from '../data/overall.png';
 import { projects } from '../data/data';
 
 function Project(props) {
@@ -12,14 +12,14 @@ function Project(props) {
   );
   return (
     <div className="text-left">
-      <div className="">
-        <a href={projects["group" + i]["project" + j].link} className="">
-          <h6 className="">{projects["group" + i]["project" + j].title}</h6>
+      <div>
+        <a href={projects["group" + i]["project" + j].link} target = "_blank" rel="noopener noreferrer">
+          <h6>{projects["group" + i]["project" + j].title}</h6>
         </a>
         <hr />
-        <p className="small">{projects["group" + i]["project" + j].tech}</p>
+        <p>{projects["group" + i]["project" + j].tech}</p>
         <h6>Features</h6>
-        <p className="small">{features}</p>
+        <p>{features}</p>
       </div>
     </div>
   );
@@ -34,7 +34,7 @@ function Figure(props) {
     padding: "20px",
   }
   return (
-    <div className="">
+    <div>
       <img src={figure1} style={style} alt="figure for selected project"></img>
     </div>
   );
@@ -43,8 +43,8 @@ function Figure(props) {
 function SelectProjects(props) {
   return (
     <div>
-      <Link to="./projectsPage">
-        <h6 className="text-left text-secondary">PROJECTS</h6>
+      <Link to="./projectsPage" >
+        <h6 className="text-left text-secondary">PROJECTS >></h6>
       </Link>
       <div className="row align-items-center">
         <div className="col-sm-4">
@@ -54,6 +54,7 @@ function SelectProjects(props) {
           <Figure />
         </div>
       </div>
+      <br/>
       <div className="row align-items-center">
         <div className="col-sm-6">
           <Project group={2} index={1} tag={2} />

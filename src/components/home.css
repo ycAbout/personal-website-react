@@ -10,14 +10,14 @@
     position:relative;
 }
 
-.center {
-    position:center center;
-    margin: auto; 
+nav {
+    position: relative;
+    width: 100%; 
 }
 
 main {
-    position: absolute;;
-    width: 70%; 
+    position: absolute;
+    width: 70%;
 }
 
 aside {
@@ -25,7 +25,4 @@ aside {
     width: 28%; 
     right: 0;
 }
-
-
-
 

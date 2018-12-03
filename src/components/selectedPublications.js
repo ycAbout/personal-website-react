@@ -13,7 +13,7 @@ class SelectedPublications extends Component {
         <div className="container text-left small">
           <br />
           <Link to="./publicationsPage">
-            <h6 className="text-left text-secondary">PUBLICATION</h6>
+            <h6 className="text-left text-secondary">PUBLICATIONS</h6>
           </Link>
           <h6 className="text-left">Peer-reviewed journal papers</h6>
           <p>{papers}</p>

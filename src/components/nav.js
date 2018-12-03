@@ -22,6 +22,15 @@ class Nav extends Component {
                   <Link className="nav-link" to="./publicationsPage">Publications</Link>
                 </li>
                 <li className="nav-item">
+                  <Link className="nav-link" to="./frontEndUserExperiencePage">Front End and UX </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="./psychologyExperimentsPage">Psychology Exp</Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="./outsideContentsPage">Outside Con </Link>
+                </li>
+                <li className="nav-item">
                   <Link className="nav-link" to="./fame">Wall of Fame</Link>
                 </li>
                 <li className="nav-item">

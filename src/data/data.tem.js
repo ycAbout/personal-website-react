@@ -119,7 +119,54 @@ const projects = {
   },
 }
 
+const courses = {
+    frontEnd: ["a", "b", "c"],
+    HCI: ["d"]
+}
 
+const cognitiveArithmetic = {
+    concept: "abc",
+    effects: [
+        "d", 
+        "e", 
+        "f", 
+    ]
+}
+
+const recentPublication = {
+    title: "a",
+    highlights: [
+        "b",
+        "c",
+        "d",
+    ],
+    link: "https://google.com"
+}
+
+const uxHeuristics = {
+    title: "10 Usability Heuristics for User Interface Design",
+    heuristics: [
+        "Visibility of system status",
+        "Match between system and the real world",
+        "User control and freedom",
+        "Consistency and standards",
+        "Error prevention",
+        "Recognition rather than recall",
+        "Flexibility and efficiency of use",
+        "Aesthetic and minimalist design",
+        "Help users recognize, diagnose, and recover from errors",
+        "help and documentation"
+        ],
+    link: "https://www.nngroup.com/articles/ten-usability-heuristics/"
+}
+
+const gaming = {
+    title: "The Psychology of Esports: A Systematic Literature Review",
+    contents: [
+        '"The aim of the present paper was to review the main topics of psychological interest about esports and then to examine the similarities of esports to professional and problem gambling. As a result of a systematic literature search, eight studies were identified that had investigated three topics: (1) the process of becoming an esport player, (2) the characteristics of esport players such as mental skills and motivations, and (3) the motivations of esport spectators."'
+    ],
+    link: "https://link.springer.com/article/10.1007%2Fs10899-018-9763-1"
+}
 
 export {
     person,
@@ -133,6 +180,10 @@ export {
     summaryList,
     achievementsList,
     skillsList,
-    projects
+    projects,
+    courses,
+    cognitiveArithmetic,
+    recentPublication,
+    uxHeuristics,
+    gaming
 };
-
