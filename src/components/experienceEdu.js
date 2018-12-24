@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import Nav from './nav';
+import React from 'react';
 import {eduList, experiences} from '../data/data';
 
 function Experience (props) {
@@ -23,11 +22,9 @@ function Experiences (props){
   }
   return (
     <div>
-      <br/>
       <ul>
         {es}
       </ul>
-      <br/>
     </div>
   )
 }
@@ -37,22 +34,4 @@ const educations = eduList.map((edu) =>
   <li>{edu}</li>
 );
 
-class ExperienceEdu extends Component {
-    render() {
-      return (
-        <div>
-          <Nav/>
-          <div className='container text-left'>
-            <br/>
-            <h5>Experience</h5>
-            <Experiences/>
-            <h5>Education</h5>
-            <ul>{educations}</ul>
-          </div>
-        </div>
-      );
-    }
-  }
-  
-export default ExperienceEdu;
 export { educations, Experiences };

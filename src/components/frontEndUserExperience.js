@@ -73,7 +73,7 @@ function FrontEndUserExperience(props) {
   return (
     <div>
       <Link to="./frontEndUserExperiencePage">
-        <h6 className="text-left text-secondary">FRONT END AND USER EXPERIENCE >></h6>
+        <h6 className="text-left text-secondary">MY EXPERTISE IN FRONT END AND USER EXPERIENCE >></h6>
       </Link>
       <div className="row align-items-center">
         <div className="col-sm-4">

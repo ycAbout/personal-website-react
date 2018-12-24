@@ -1,0 +1,15 @@
+#resumeContainer {
+  max-width: 21cm;
+  border-style: solid;
+  border-color: lightgrey;
+  margin-left: auto; 
+  margin-right: auto;
+  margin-bottom: 2em;
+}
+
+#resume {
+  padding-left: 2cm;
+  padding-right: 2cm;
+  padding-top: 2cm;
+  padding-bottom: 2cm;
+}

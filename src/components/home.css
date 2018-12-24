@@ -6,23 +6,22 @@
     width: 100vw
 }
 
-#content {
-    position:relative;
-}
-
 nav {
-    position: relative;
-    width: 100%; 
+    width: 100%;
 }
 
 main {
-    position: absolute;
     width: 70%;
+    float: left;
 }
 
 aside {
-    position: absolute;
     width: 28%; 
-    right: 0;
+    float: right;
+}
+
+footer {
+    clear: both;
+    padding-bottom: 2em;
 }
 

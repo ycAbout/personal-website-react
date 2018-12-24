@@ -12,7 +12,7 @@ import Footer from './footer';
 class Home extends Component {
   render() {
     return (
-      <div id="content">
+      <div>
         <header>
           <br />
           <Me />
@@ -38,14 +38,14 @@ class Home extends Component {
           <div>
             <OutsideContents />
           </div>
-          <div>
-            <Footer />
-          </div>
         </main>
         <aside>
           <SelectedPublications />
           <br/>
         </aside>
+        <footer>
+            <Footer />
+          </footer>
       </div>
     );
   }

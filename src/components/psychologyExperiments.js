@@ -66,7 +66,7 @@ function PsychologyExperiments(props) {
   return (
     <div>
       <Link to="./psychologyExperimentsPage">
-        <h6 className="text-left text-secondary">COGNITIVE PSYCHOLOGY EXPERIMENTS >></h6>
+        <h6 className="text-left text-secondary">MY COGNITIVE PSYCHOLOGY RESEARCH >></h6>
       </Link>
       <div className="row align-items-center">
         <div className="col-sm-4">

@@ -44,7 +44,7 @@ function SelectProjects(props) {
   return (
     <div>
       <Link to="./projectsPage" >
-        <h6 className="text-left text-secondary">PROJECTS >></h6>
+        <h6 className="text-left text-secondary">MY PROJECTS >></h6>
       </Link>
       <div className="row align-items-center">
         <div className="col-sm-4">
