@@ -1,10 +1,18 @@
+/*
 .bg {
-    /* the copy right for the bg photo is in the public domain acquired Sept.2018 from 
-    https://www.publicdomainpictures.net/en/view-image.php?image=232779&picture=forest-landscape */
+    "the copy right for the bg photo is in the public domain acquired Sept.2018 from 
+    https://www.publicdomainpictures.net/en/view-image.php?image=232779&picture=forest-landscape
     background-image: url("../data/bg.jpg");
     height: 100vh; 
     width: 100vw
+} */
+
+
+header {
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
+
 
 nav {
     width: 100%;

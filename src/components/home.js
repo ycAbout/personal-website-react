@@ -14,9 +14,7 @@ class Home extends Component {
     return (
       <div>
         <header>
-          <br />
           <Me />
-          <hr />
         </header>
         <nav>
           <Nav />
